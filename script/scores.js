@@ -30,7 +30,7 @@ function saveArray(scoreEntry) {
 function listItem() {
     for (i = 0; i < highScoreArray.length; i++) {
         var newlistItem = document.createElement("li");
-        newlistItem.appendChild(document.createTextNode(`${highScoreArray[i].userName} --- ${highScoreArray[i].newScore}`));
+        newlistItem.appendChild(document.createTextNode(`${highScoreArray[i].userName} - ${highScoreArray[i].newScore}`));
         highscoresList.appendChild(newlistItem);
     }
 }

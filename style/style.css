@@ -139,3 +139,9 @@ button {
 .answerbutton {
 margin: 50px;;
 }
+
+#title, h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
