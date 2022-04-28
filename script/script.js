@@ -76,7 +76,8 @@ var questions = [{
         ],
         answer: "Shuri"
     },
-    {title: "In Black Widow, what is the name of Russia's version of Captain America?",
+    {
+        title: "In Black Widow, what is the name of Russia's version of Captain America?",
         choices: [
             "Omega Red",
             "Ursa Major",
@@ -85,7 +86,8 @@ var questions = [{
         ],
         answer: "Red Guardian"
     },
-    {title: "Which of these villains was NOT in Spider-Man: No Way Home?",
+    {
+        title: "Which of these villains was NOT in Spider-Man: No Way Home?",
         choices: [
             "Green Goblin",
             "Doctor Octopus",
@@ -149,14 +151,17 @@ function showNextQuestion() {
 function endQuiz() {
     quizform.remove();
     quizQuestion.textContent = "Your score is " + score;
+
     var userInput = document.createElement("p");
     userInput.textContent = "To save your score enter your name";
     userInput.setAttribute("style", "margin-left:50px; font-size: 30px; margin-top: 20px");
     quizQuestion.appendChild(userInput);
+
     var userInitials = document.createElement("input");
     userInitials.setAttribute("type", "text");
     userInitials.setAttribute("style", "margin-left:50px; width:6rem");
     quizQuestion.appendChild(userInitials);
+
     var savehighScoreBtn = document.createElement("button");
     savehighScoreBtn.setAttribute("type", "button");
     savehighScoreBtn.setAttribute("style", "background-color: #ea3939; border-radius: 8px; margin-left:20px; padding-left: 15px; padding-right: 15px; color:white; border-color: #ea3939; font-size:30px; font-weight:200");
@@ -176,7 +181,7 @@ function endQuiz() {
 
     });
 
-//Stores username and score to local storage and displays high scores on the scores.html page
+    //Stores username and score to local storage and displays high scores on the scores.html page
 
     function storeScore(userName, newScore) {
         localStorage.setItem("newHighScoreAdded", JSON.stringify({
