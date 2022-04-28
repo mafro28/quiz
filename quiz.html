@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="img/png" href="images/favicon.ico">
+    <title>Marvel MCU Quiz</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <h1 id="nav-title">Marvel Cinematic Universe Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="scores.html">Scores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <figure>
+        <img class="main-image" src="images/Infinitywar.png" alt="Infinity War">
+    </figure>
+
+    <section>
+        <div id="questionContainer">
+            <h1 id="title">Question here</h1>
+            <hr class="break">
+            <div>
+                <h5>Seconds remaining <span id="timeRemaining">60</span></h5>
+            </div>
+        </div>
+
+        <div id="quizform">
+            <div class="wrapper">
+                <button type="button" class="answerbutton grid-item" id="answerOne">Answer</button>
+                <br>
+                <button type="button" class="answerbutton grid-item" id="answerTwo">Answer</button>
+                <br>
+            </div>
+            <div class="wrapper">
+                <button type="button" class="answerbutton grid-item" id="answerThree">Answer</button>
+                <br>
+                <button type="button" class="answerbutton grid-item" id="answerFour">Answer</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
+
+    <audio id="musicplayer" autoplay>
+        <source src="theme.mp3">
+    </audio>
+
+    <script>
+        var audio = document.getElementById("musicplayer");
+        audio.volume = 0.1;
+    </script>
+
+    <footer>
+        <p>&copy; 2022 Matthew Francis</p>
+    </footer>
+
+</body>
+
+</html>
