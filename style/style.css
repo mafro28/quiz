@@ -11,7 +11,7 @@ body {
 
 /* Navigation bar styling using Flexbox*/
 header {
-    background-color: #ea3939;
+    background: linear-gradient(to right, rgb(255, 27, 27), rgb(255, 245, 245));
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -40,7 +40,7 @@ li {
 }
 
 header a:hover {
-    color: #c5dedc;
+    color: #991919;
 }
 
 .main-image {
